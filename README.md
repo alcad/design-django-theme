@@ -105,7 +105,8 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 | **{% block footer_contacts_section %}** | Sezione contatti in Footer   |
 | **{% block footer_bottom %}** | Striscia bottom in Footer   |
 | **{% block footer_bottom_content %}** | Contenuto striscia bottom in Footer   |
-| **{% block bottom_scripts %}** | Extra javascript a fine pagina   |
+| **{% block bottom_scripts %}** | Javascripts   |
+| **{% block extra_scripts %}** | Javascript aggiuntivi a fine pagina   |
 
 
 Esempio di base.html
