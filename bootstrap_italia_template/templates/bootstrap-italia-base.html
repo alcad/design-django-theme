@@ -289,6 +289,23 @@
         </div>
         {% endblock header_wrapper %}
         
+        {% if messages %}
+        <!-- Messaggi di sistema-->
+        <div class"messaggi">
+            {% block messages %}
+            <div class="container">
+                <div class="col-12 py-md-5 bd-content">
+                    {% block centered_messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}{% if 'error' in message.tags%} alert-danger{% endif %}" role="alert">{{ message }}</div>
+                    {% endfor %}
+                    {% endblock centered_messages %}
+                </div>
+            </div>
+            {% endblock messages %}
+        </div>
+        {% endif %}
+        
         <!-- Container - Body of page-->
         <div class="main-body">
             {% block container %}
